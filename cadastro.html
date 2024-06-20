@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Biblioteca digital - Cadastro</title>
+  
+  <link rel="stylesheet" type="text/css" href="cadastro.css">
+  <link rel="icon" type="image/x-icon" href="src\assets\icon.png" />
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="titulo">
+      <img class="mb-5 logo" src="src\assets\bibliotecalogo2.png" alt="logo">
+    </div>
+
+    <form id="form" class="form">
+     
+      <div class="form-control">
+        <input type="text" id="email" placeholder="E-mail"/>
+        <small>Mensagem de erro</small>
+      </div>
+
+      <div class="form-control">
+        <input type="password" id="senha" placeholder="Senha"/>
+        <small>Mensagem de erro</small>
+      </div>
+
+      <div class="form-control">
+        <input type="password" id="confirmar" placeholder="Confirmar senha"/>
+        <small>Mensagem de erro</small>
+      </div>
+        
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+  <script src="src\cadastro.jsx"></script>
+</body>
+</html>
