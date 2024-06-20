@@ -1,5 +1,4 @@
 const form = document.getElementById('form');
-const nome = document.getElementById('nome');
 const email = document.getElementById('email');
 const senha = document.getElementById('senha');
 const confirmar = document.getElementById('confirmar');
@@ -10,16 +9,9 @@ form.addEventListener("submit", (e) => {
 });
 
 function checarInputs(){
-    const nomeValue = nome.value;
     const emailValue = email.value;
     const senhaValue = senha.value;
     const confirmarValue = confirmar.value;
-
-    if(nomeValue === ""){
-        setErroFor(nome, "O nome é obrigatório.");
-    } else {
-        setSucessoFor(nome);
-    }
 
     if(emailValue === ""){
         setErroFor(email, "O email é obrigatório.");
